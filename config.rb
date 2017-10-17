@@ -12,6 +12,7 @@ end
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page "reviews/*", :layout => 'review.layout'
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'

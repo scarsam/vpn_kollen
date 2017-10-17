@@ -7,10 +7,24 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title><%= current_page.data.title || "Middleman" %></title>
+    <%= stylesheet_link_tag "//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" %>
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <nav class="navbar is-primary">
+      <div class="navbar-menu">
+        <a class="navbar-item">
+          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Bulma">
+        </a>
+        <div class="navbar-end">
+          <a class="navbar-item">Top 5 VPN</a>
+          <a class="navbar-item">Bästa VPN tjänster</a>
+          <a class="navbar-item">Artiklar</a>
+          <a class="navbar-item">Blogg</a>
+        </div>
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
