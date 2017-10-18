@@ -1,0 +1,15 @@
+<div class="column">
+  <figure class="image is-128x128">
+    <img src="https://bulma.io/images/placeholders/128x128.png">
+  </figure>
+</div>
+<div class="column is-three-quarters">
+  <div class="content">
+    <ul>
+      <% current_page.data.bullet_points.each do |f| %>
+          <li><%= f %></li>
+      <% end %>
+    </ul>
+    <a class="button">Call to action</a>
+  </div>
+</div>
